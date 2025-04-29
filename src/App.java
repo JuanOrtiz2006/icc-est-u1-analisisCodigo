@@ -32,11 +32,12 @@ public class App {
         */
 
         // Metodo burbujaTradicionalTercero
-        int[] arregloBurbujaOrdenado3 =
+        /*int[] arregloBurbujaOrdenado3 =
         ordenador.burbujaTradicionalTercero(arregloBurbuja);
         System.out.println(
         "Resultado burbuja tradicional Metodo 3: " +
         java.util.Arrays.toString(arregloBurbujaOrdenado3));
+        */
 
         // Metodo seleccionPrimero
         /*int[] arregloSeleccionOrdenado1 =
@@ -86,5 +87,7 @@ public class App {
         "Resultado selección Metodo 1: " +
         java.util.Arrays.toString(arregloInsercionOrdenado3));
         */
+
+        BenchMarking benchMarking = new BenchMarking();
     }
 }
