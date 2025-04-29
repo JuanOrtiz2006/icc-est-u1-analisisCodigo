@@ -46,19 +46,20 @@ public class MetodosOrdenamiento {
     }
 
     // Método de burbuja tradicional con errores
-    // Error encontrado:
+    // Error encontrado: la condicion del segundo for esta mal definida y el cmabio de datos esta mal
+    // Solución: se debe comparar si arreglo[i] es mayor que arreglo[j] y el cambio de datos debe ser correcto
     public int[] burbujaTradicionalTercero(int[] arregloOriginal) {
 
         int[] arreglo = Arrays.copyOf(arregloOriginal, arregloOriginal.length);
 
         int n = arreglo.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n; j++) {
-                if (arreglo[j] > arreglo[j + 1]) {
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arreglo[i] > arreglo[j]) {
                     // Intercambio de elementos
-                    int temp = arreglo[j];
-                    arreglo[j] = arreglo[j + 1];
-                    arreglo[j + 1] = temp;
+                    int temp = arreglo[i];
+                    arreglo[i] = arreglo[j];
+                    arreglo[j] = temp;
                 }
             }
         }
